@@ -1,0 +1,87 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora geometrica: Código-Fonte de include/esfera.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora geometrica
+   </div>
+   <div id="projectbrief">Programa para o calculo de formas geometricas planas e espaciais</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">esfera.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *@file esfera.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *@brief arquivo de cabecalho do objeto esfera</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *@author Antonio Marcos de Oliveira</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *@since 18/04/1997</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *@date 21/04/1997</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef ESFERA_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define ESFERA_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#define PI 3.1415</span></div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using</span> std::cout;</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using</span> std::endl;</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;</div><div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="classEsfera.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="classEsfera.html">Esfera</a></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> m_raio;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classEsfera.html#acd7e6a034c7a9a19b1caccebc70e6538">Esfera</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classEsfera.html#abf33ddbf68a9d97d90ddb1ee83d5c994">~Esfera</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    </div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEsfera.html#a3ad3c00d8c7dd3976356b7fce4c4963f">calcular_area_esfera</a>(<span class="keywordtype">float</span> raio);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEsfera.html#afd9e4a6bf90e79bc73831c6fcbfc87b1">calcular_volume_esfera</a>(<span class="keywordtype">float</span> raio);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEsfera.html#a945ea5a121346cf305ee1e7a04d47b57">mostrar_area_esfera</a>(<span class="keywordtype">float</span> raio);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEsfera.html#a8cc5291f2278d1664a75650ee6889f02">mostrar_volume_esfera</a>(<span class="keywordtype">float</span> raio);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classEsfera.html#aaae2727eec6f18ecbe6cd7168f9b50a8">get_raio</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classEsfera.html#ae4bb91e7baef60aacab71a73a4a4d06f">set_raio</a>(<span class="keywordtype">float</span> raio);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*ESFERA_H*/</span><span class="preprocessor"></span></div><div class="ttc" id="classEsfera_html_afd9e4a6bf90e79bc73831c6fcbfc87b1"><div class="ttname"><a href="classEsfera.html#afd9e4a6bf90e79bc73831c6fcbfc87b1">Esfera::calcular_volume_esfera</a></div><div class="ttdeci">float calcular_volume_esfera(float raio)</div><div class="ttdoc">Funcao que calcula o volume da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:36</div></div>
+<div class="ttc" id="classEsfera_html_acd7e6a034c7a9a19b1caccebc70e6538"><div class="ttname"><a href="classEsfera.html#acd7e6a034c7a9a19b1caccebc70e6538">Esfera::Esfera</a></div><div class="ttdeci">Esfera()</div><div class="ttdoc">Construtor padrao. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:13</div></div>
+<div class="ttc" id="classEsfera_html_a8cc5291f2278d1664a75650ee6889f02"><div class="ttname"><a href="classEsfera.html#a8cc5291f2278d1664a75650ee6889f02">Esfera::mostrar_volume_esfera</a></div><div class="ttdeci">void mostrar_volume_esfera(float raio)</div><div class="ttdoc">Funcao que mostra o volume da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:58</div></div>
+<div class="ttc" id="classEsfera_html_ae4bb91e7baef60aacab71a73a4a4d06f"><div class="ttname"><a href="classEsfera.html#ae4bb91e7baef60aacab71a73a4a4d06f">Esfera::set_raio</a></div><div class="ttdeci">void set_raio(float raio)</div><div class="ttdoc">Metoda acessor para alterar a area da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:79</div></div>
+<div class="ttc" id="classEsfera_html_a945ea5a121346cf305ee1e7a04d47b57"><div class="ttname"><a href="classEsfera.html#a945ea5a121346cf305ee1e7a04d47b57">Esfera::mostrar_area_esfera</a></div><div class="ttdeci">void mostrar_area_esfera(float raio)</div><div class="ttdoc">Funcao que mostra a area da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:47</div></div>
+<div class="ttc" id="classEsfera_html_aaae2727eec6f18ecbe6cd7168f9b50a8"><div class="ttname"><a href="classEsfera.html#aaae2727eec6f18ecbe6cd7168f9b50a8">Esfera::get_raio</a></div><div class="ttdeci">float get_raio()</div><div class="ttdoc">Metoda acessor para pegar a area da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:69</div></div>
+<div class="ttc" id="classEsfera_html_abf33ddbf68a9d97d90ddb1ee83d5c994"><div class="ttname"><a href="classEsfera.html#abf33ddbf68a9d97d90ddb1ee83d5c994">Esfera::~Esfera</a></div><div class="ttdeci">~Esfera()</div><div class="ttdoc">Destrutor padrao. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:17</div></div>
+<div class="ttc" id="classEsfera_html_a3ad3c00d8c7dd3976356b7fce4c4963f"><div class="ttname"><a href="classEsfera.html#a3ad3c00d8c7dd3976356b7fce4c4963f">Esfera::calcular_area_esfera</a></div><div class="ttdeci">float calcular_area_esfera(float raio)</div><div class="ttdoc">Funcao que calcula a area da esfera. </div><div class="ttdef"><b>Definition:</b> esfera.cpp:25</div></div>
+<div class="ttc" id="classEsfera_html"><div class="ttname"><a href="classEsfera.html">Esfera</a></div><div class="ttdef"><b>Definition:</b> esfera.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

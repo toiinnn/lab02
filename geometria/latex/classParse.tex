@@ -1,0 +1,41 @@
+\hypertarget{classParse}{}\section{Referência da Classe Parse}
+\label{classParse}\index{Parse@{Parse}}
+\subsection*{Métodos Públicos}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classParse_ab44bf754dbe7e6fc008af31af8ca75fb}\label{classParse_ab44bf754dbe7e6fc008af31af8ca75fb}} 
+\hyperlink{classParse_ab44bf754dbe7e6fc008af31af8ca75fb}{Parse} ()
+\begin{DoxyCompactList}\small\item\em Construtor padrao. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classParse_a09620677a05691231960c07803aec495}\label{classParse_a09620677a05691231960c07803aec495}} 
+\hyperlink{classParse_a09620677a05691231960c07803aec495}{$\sim$\+Parse} ()
+\begin{DoxyCompactList}\small\item\em Destrutor padrao. \end{DoxyCompactList}\item 
+void \hyperlink{classParse_a620949e81a084e31bce2f789fa875130}{parse\+\_\+geometria} (int argc, const char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Funcao que recebe os parametros e eh a interacao com o usuario. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Métodos}
+\mbox{\Hypertarget{classParse_a620949e81a084e31bce2f789fa875130}\label{classParse_a620949e81a084e31bce2f789fa875130}} 
+\index{Parse@{Parse}!parse\+\_\+geometria@{parse\+\_\+geometria}}
+\index{parse\+\_\+geometria@{parse\+\_\+geometria}!Parse@{Parse}}
+\subsubsection{\texorpdfstring{parse\+\_\+geometria()}{parse\_geometria()}}
+{\footnotesize\ttfamily void Parse\+::parse\+\_\+geometria (\begin{DoxyParamCaption}\item[{int}]{argc,  }\item[{const char $\ast$}]{argv\mbox{[}$\,$\mbox{]} = {\ttfamily nullptr} }\end{DoxyParamCaption})}
+
+
+
+Funcao que recebe os parametros e eh a interacao com o usuario. 
+
+Dependendo de quais e quantos argumentos forem recebidos na linha de comando, o programa irá entrar em alguma condição e executar aquele bloco 
+\begin{DoxyParams}{Parâmetros}
+{\em } & \\
+\hline
+\end{DoxyParams}
+bloco condicional para lançar a mensagem caso o programa seja executado sem parametros
+
+String para guardar o segundo argumento recebibo e saber qual forma geometrica sera calculada
+
+bloco condicional para calcular as formas geometricas ou lancar a exceção caso o programa seja caso seja executado sem os parametros corretos 
+
+A documentação para esta classe foi gerada a partir dos seguintes arquivos\+:\begin{DoxyCompactItemize}
+\item 
+include/parse.\+h\item 
+src/parse.\+cpp\end{DoxyCompactItemize}

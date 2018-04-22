@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora geometrica: Código-Fonte de include/piramide.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora geometrica
+   </div>
+   <div id="projectbrief">Programa para o calculo de formas geometricas planas e espaciais</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">piramide.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *@file piramide.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *@brief arquivo de cabecalho do objeto piramide</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *@author Antonio Marcos de Oliveira</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *@since 18/04/1997</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *@date 21/04/1997</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PIRAMIDE_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PIRAMIDE_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> std::cout;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> std::endl;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classPiramide.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classPiramide.html">Piramide</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> m_area_base;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> m_area_lateral;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> m_altura;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classPiramide.html#adfdf121c3906929a4971bec00b05afa2">Piramide</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classPiramide.html#a1fdd51b594ba1fe14e094c7f1a6e5e79">~Piramide</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classPiramide.html#af728486b416f8613534458aa23d5f829">calcular_area_piramide</a>(<span class="keywordtype">float</span> area_base, <span class="keywordtype">float</span> area_lateral);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classPiramide.html#a610ee9556dc701e27f8fc1efdd6d17c1">calcular_volume_piramide</a>(<span class="keywordtype">float</span> area_base, <span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiramide.html#a7d29435cac0fb807ab2584acc7806fe6">mostrar_area_piramide</a>(<span class="keywordtype">float</span> area_base, <span class="keywordtype">float</span> area_lateral);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiramide.html#a46b46e867a3acac325422627534e6902">mostrar_volume_piramide</a>(<span class="keywordtype">float</span> area_base, <span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classPiramide.html#ad97233120a836340667b2a6d95e1bb4e">get_area_base</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiramide.html#a3c29913c295f62f05813dc72baa3a36d">set_area_base</a>(<span class="keywordtype">float</span> area_base);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classPiramide.html#a868f5e0f60c0af1c6e1f6ff8f002ec19">get_area_lateral</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiramide.html#aad0af6674d79dffcf0c17f82bd9625ad">set_area_lateral</a>(<span class="keywordtype">float</span> area_lateral);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classPiramide.html#aa70bdfef3f2974420224bfc043727193">get_altura</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classPiramide.html#a5a0b37acd4834fb528beeb985f385d6d">set_altura</a>(<span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*PIRAMIDE_H*/</span><span class="preprocessor"></span></div><div class="ttc" id="classPiramide_html_a610ee9556dc701e27f8fc1efdd6d17c1"><div class="ttname"><a href="classPiramide.html#a610ee9556dc701e27f8fc1efdd6d17c1">Piramide::calcular_volume_piramide</a></div><div class="ttdeci">float calcular_volume_piramide(float area_base, float altura)</div><div class="ttdoc">Funcao que calcula o volume da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:39</div></div>
+<div class="ttc" id="classPiramide_html_a5a0b37acd4834fb528beeb985f385d6d"><div class="ttname"><a href="classPiramide.html#a5a0b37acd4834fb528beeb985f385d6d">Piramide::set_altura</a></div><div class="ttdeci">void set_altura(float altura)</div><div class="ttdoc">Metoda acessor para alterar a area da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:127</div></div>
+<div class="ttc" id="classPiramide_html_a7d29435cac0fb807ab2584acc7806fe6"><div class="ttname"><a href="classPiramide.html#a7d29435cac0fb807ab2584acc7806fe6">Piramide::mostrar_area_piramide</a></div><div class="ttdeci">void mostrar_area_piramide(float area_base, float area_lateral)</div><div class="ttdoc">Funcao que mostra a area da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:52</div></div>
+<div class="ttc" id="classPiramide_html_a1fdd51b594ba1fe14e094c7f1a6e5e79"><div class="ttname"><a href="classPiramide.html#a1fdd51b594ba1fe14e094c7f1a6e5e79">Piramide::~Piramide</a></div><div class="ttdeci">~Piramide()</div><div class="ttdoc">Destrutor padrao. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:17</div></div>
+<div class="ttc" id="classPiramide_html_aa70bdfef3f2974420224bfc043727193"><div class="ttname"><a href="classPiramide.html#aa70bdfef3f2974420224bfc043727193">Piramide::get_altura</a></div><div class="ttdeci">float get_altura()</div><div class="ttdoc">Metoda acessor para pegar a altura da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:117</div></div>
+<div class="ttc" id="classPiramide_html_af728486b416f8613534458aa23d5f829"><div class="ttname"><a href="classPiramide.html#af728486b416f8613534458aa23d5f829">Piramide::calcular_area_piramide</a></div><div class="ttdeci">float calcular_area_piramide(float area_base, float area_lateral)</div><div class="ttdoc">Funcao que calcula a area da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:26</div></div>
+<div class="ttc" id="classPiramide_html_a3c29913c295f62f05813dc72baa3a36d"><div class="ttname"><a href="classPiramide.html#a3c29913c295f62f05813dc72baa3a36d">Piramide::set_area_base</a></div><div class="ttdeci">void set_area_base(float area_base)</div><div class="ttdoc">Metoda acessor para alterar a area da base da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:87</div></div>
+<div class="ttc" id="classPiramide_html_a46b46e867a3acac325422627534e6902"><div class="ttname"><a href="classPiramide.html#a46b46e867a3acac325422627534e6902">Piramide::mostrar_volume_piramide</a></div><div class="ttdeci">void mostrar_volume_piramide(float area_base, float altura)</div><div class="ttdoc">Funcao que mostra o volume da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:65</div></div>
+<div class="ttc" id="classPiramide_html"><div class="ttname"><a href="classPiramide.html">Piramide</a></div><div class="ttdef"><b>Definition:</b> piramide.h:16</div></div>
+<div class="ttc" id="classPiramide_html_aad0af6674d79dffcf0c17f82bd9625ad"><div class="ttname"><a href="classPiramide.html#aad0af6674d79dffcf0c17f82bd9625ad">Piramide::set_area_lateral</a></div><div class="ttdeci">void set_area_lateral(float area_lateral)</div><div class="ttdoc">Metoda acessor para alterar a area da lateral da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:107</div></div>
+<div class="ttc" id="classPiramide_html_adfdf121c3906929a4971bec00b05afa2"><div class="ttname"><a href="classPiramide.html#adfdf121c3906929a4971bec00b05afa2">Piramide::Piramide</a></div><div class="ttdeci">Piramide()</div><div class="ttdoc">Construtor padrao. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:13</div></div>
+<div class="ttc" id="classPiramide_html_ad97233120a836340667b2a6d95e1bb4e"><div class="ttname"><a href="classPiramide.html#ad97233120a836340667b2a6d95e1bb4e">Piramide::get_area_base</a></div><div class="ttdeci">float get_area_base()</div><div class="ttdoc">Metoda acessor para pegar a area da base da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:77</div></div>
+<div class="ttc" id="classPiramide_html_a868f5e0f60c0af1c6e1f6ff8f002ec19"><div class="ttname"><a href="classPiramide.html#a868f5e0f60c0af1c6e1f6ff8f002ec19">Piramide::get_area_lateral</a></div><div class="ttdeci">float get_area_lateral()</div><div class="ttdoc">Metoda acessor para pegar a area lateral da piramide. </div><div class="ttdef"><b>Definition:</b> piramide.cpp:97</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

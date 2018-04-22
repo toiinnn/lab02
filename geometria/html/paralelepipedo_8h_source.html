@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora geometrica: Código-Fonte de include/paralelepipedo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora geometrica
+   </div>
+   <div id="projectbrief">Programa para o calculo de formas geometricas planas e espaciais</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">paralelepipedo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *@file paralelepipedo.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *@brief arquivo de cabecalho do objeto paralelepipedo</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *@author Antonio Marcos de Oliveira</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *@since 18/04/1997</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *@date 21/04/1997</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef PARALELEPIPEDO_H</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define PARALELEPIPEDO_H</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="keyword">using</span> std::cout;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="keyword">using</span> std::endl;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;</div><div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="classParalelepipedo.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParalelepipedo.html">Paralelepipedo</a></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> m_aresta1;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> m_aresta2;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;    <span class="keywordtype">float</span> m_aresta3;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="classParalelepipedo.html#a504bdcc729cfcba0b76f834f6493b0a2">Paralelepipedo</a>();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="classParalelepipedo.html#a844890821adcfdf1bdcaecb7fc2f8a0c">~Paralelepipedo</a>();</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classParalelepipedo.html#a1715462a8d3456c1d0df0b7a0bd37242">calcular_area_paralelepipedo</a>(<span class="keywordtype">float</span> aresta1, <span class="keywordtype">float</span> aresta2, <span class="keywordtype">float</span> aresta3);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classParalelepipedo.html#ae5be025ecab123eec36e7831025d39c7">calcular_volume_paralelepipedo</a>(<span class="keywordtype">float</span> aresta1, <span class="keywordtype">float</span> aresta2, <span class="keywordtype">float</span> aresta3);</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParalelepipedo.html#a2dec8c7de5c7780f9896f3ae25b7f680">mostrar_area_paralelepipedo</a>(<span class="keywordtype">float</span> aresta1, <span class="keywordtype">float</span> aresta2, <span class="keywordtype">float</span> aresta3);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParalelepipedo.html#a71b8363aa56984695845eb758b4545fd">mostrar_volume_paralelepipedo</a>(<span class="keywordtype">float</span> aresta1, <span class="keywordtype">float</span> aresta2, <span class="keywordtype">float</span> aresta3);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classParalelepipedo.html#a0a358a9909745342df7520db96a7f88e">get_aresta1</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParalelepipedo.html#aa4e9e622a76be557e4a38ac72e6db796">set_aresta1</a>(<span class="keywordtype">float</span> aresta1);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classParalelepipedo.html#a9505c63ed99ef3d6e4d489d03c08526b">get_aresta2</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParalelepipedo.html#a613fcca3e75646a03af90f642efce73d">set_aresta2</a>(<span class="keywordtype">float</span> aresta2);</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classParalelepipedo.html#af47229ad9870c09804c0e0f958ccf6be">get_aresta3</a>();</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParalelepipedo.html#abf1d62c6b1fe4739a8fc9976d9c5b4f3">set_aresta3</a>(<span class="keywordtype">float</span> aresta3);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;};</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*PARALELEPIPEDO_H*/</span><span class="preprocessor"></span></div><div class="ttc" id="classParalelepipedo_html_af47229ad9870c09804c0e0f958ccf6be"><div class="ttname"><a href="classParalelepipedo.html#af47229ad9870c09804c0e0f958ccf6be">Paralelepipedo::get_aresta3</a></div><div class="ttdeci">float get_aresta3()</div><div class="ttdoc">Metodo acessor para pegar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:125</div></div>
+<div class="ttc" id="classParalelepipedo_html_aa4e9e622a76be557e4a38ac72e6db796"><div class="ttname"><a href="classParalelepipedo.html#aa4e9e622a76be557e4a38ac72e6db796">Paralelepipedo::set_aresta1</a></div><div class="ttdeci">void set_aresta1(float aresta1)</div><div class="ttdoc">Metodo acessor para alterar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:95</div></div>
+<div class="ttc" id="classParalelepipedo_html_a71b8363aa56984695845eb758b4545fd"><div class="ttname"><a href="classParalelepipedo.html#a71b8363aa56984695845eb758b4545fd">Paralelepipedo::mostrar_volume_paralelepipedo</a></div><div class="ttdeci">void mostrar_volume_paralelepipedo(float aresta1, float aresta2, float aresta3)</div><div class="ttdoc">Funcao que mostra o volume do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:72</div></div>
+<div class="ttc" id="classParalelepipedo_html_a504bdcc729cfcba0b76f834f6493b0a2"><div class="ttname"><a href="classParalelepipedo.html#a504bdcc729cfcba0b76f834f6493b0a2">Paralelepipedo::Paralelepipedo</a></div><div class="ttdeci">Paralelepipedo()</div><div class="ttdoc">Construtor padrao. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:13</div></div>
+<div class="ttc" id="classParalelepipedo_html_a0a358a9909745342df7520db96a7f88e"><div class="ttname"><a href="classParalelepipedo.html#a0a358a9909745342df7520db96a7f88e">Paralelepipedo::get_aresta1</a></div><div class="ttdeci">float get_aresta1()</div><div class="ttdoc">Metodo acessor para pegar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:85</div></div>
+<div class="ttc" id="classParalelepipedo_html_ae5be025ecab123eec36e7831025d39c7"><div class="ttname"><a href="classParalelepipedo.html#ae5be025ecab123eec36e7831025d39c7">Paralelepipedo::calcular_volume_paralelepipedo</a></div><div class="ttdeci">float calcular_volume_paralelepipedo(float aresta1, float aresta2, float aresta3)</div><div class="ttdoc">Funcao que calcula o volume do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:42</div></div>
+<div class="ttc" id="classParalelepipedo_html_abf1d62c6b1fe4739a8fc9976d9c5b4f3"><div class="ttname"><a href="classParalelepipedo.html#abf1d62c6b1fe4739a8fc9976d9c5b4f3">Paralelepipedo::set_aresta3</a></div><div class="ttdeci">void set_aresta3(float aresta3)</div><div class="ttdoc">Metodo acessor para alterar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:135</div></div>
+<div class="ttc" id="classParalelepipedo_html_a1715462a8d3456c1d0df0b7a0bd37242"><div class="ttname"><a href="classParalelepipedo.html#a1715462a8d3456c1d0df0b7a0bd37242">Paralelepipedo::calcular_area_paralelepipedo</a></div><div class="ttdeci">float calcular_area_paralelepipedo(float aresta1, float aresta2, float aresta3)</div><div class="ttdoc">Funcao que calcula a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:27</div></div>
+<div class="ttc" id="classParalelepipedo_html_a9505c63ed99ef3d6e4d489d03c08526b"><div class="ttname"><a href="classParalelepipedo.html#a9505c63ed99ef3d6e4d489d03c08526b">Paralelepipedo::get_aresta2</a></div><div class="ttdeci">float get_aresta2()</div><div class="ttdoc">Metodo acessor para pegar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:105</div></div>
+<div class="ttc" id="classParalelepipedo_html_a613fcca3e75646a03af90f642efce73d"><div class="ttname"><a href="classParalelepipedo.html#a613fcca3e75646a03af90f642efce73d">Paralelepipedo::set_aresta2</a></div><div class="ttdeci">void set_aresta2(float aresta2)</div><div class="ttdoc">Metodo acessor para alterar a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:115</div></div>
+<div class="ttc" id="classParalelepipedo_html_a844890821adcfdf1bdcaecb7fc2f8a0c"><div class="ttname"><a href="classParalelepipedo.html#a844890821adcfdf1bdcaecb7fc2f8a0c">Paralelepipedo::~Paralelepipedo</a></div><div class="ttdeci">~Paralelepipedo()</div><div class="ttdoc">Destrutor padrao. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:17</div></div>
+<div class="ttc" id="classParalelepipedo_html_a2dec8c7de5c7780f9896f3ae25b7f680"><div class="ttname"><a href="classParalelepipedo.html#a2dec8c7de5c7780f9896f3ae25b7f680">Paralelepipedo::mostrar_area_paralelepipedo</a></div><div class="ttdeci">void mostrar_area_paralelepipedo(float aresta1, float aresta2, float aresta3)</div><div class="ttdoc">Funcao que mostra a area do paralelepipedo. </div><div class="ttdef"><b>Definition:</b> paralelepipedo.cpp:57</div></div>
+<div class="ttc" id="classParalelepipedo_html"><div class="ttname"><a href="classParalelepipedo.html">Paralelepipedo</a></div><div class="ttdef"><b>Definition:</b> paralelepipedo.h:16</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

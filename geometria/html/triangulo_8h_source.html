@@ -1,0 +1,91 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora geometrica: Código-Fonte de include/triangulo.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora geometrica
+   </div>
+   <div id="projectbrief">Programa para o calculo de formas geometricas planas e espaciais</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">triangulo.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="preprocessor">#ifndef TRIANGULO_H</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="preprocessor">#define TRIANGULO_H</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;</div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;</div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="keyword">using</span> std::cout;</div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="keyword">using</span> std::endl;</div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;</div><div class="line"><a name="l00009"></a><span class="lineno"><a class="line" href="classTriangulo.html">    9</a></span>&#160;<span class="keyword">class </span><a class="code" href="classTriangulo.html">Triangulo</a></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;{</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    <span class="keywordtype">float</span> m_base;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;    <span class="keywordtype">float</span> m_lado;</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    <span class="keywordtype">float</span> m_altura;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;    <a class="code" href="classTriangulo.html#a905d421bd19655a979ccad9e2998db0c">Triangulo</a>();</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <a class="code" href="classTriangulo.html#aca2be15b19831e8d7a5331808f5c1958">~Triangulo</a>();</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTriangulo.html#a4c849485ba611cfeadc46030687bf74f">calcular_area_triangulo</a>(<span class="keywordtype">float</span> base, <span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTriangulo.html#a95408e4018c121b3ef88b3c44a4e3607">calcular_perimetro_triangulo</a>(<span class="keywordtype">float</span> lado);</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangulo.html#a82082d7842eb3b9968b6a36d2eb99684">mostrar_area_triangulo</a>(<span class="keywordtype">float</span> base, <span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangulo.html#acd48a4eeff79b39b045d1f41aff72989">mostrar_perimetro_triangulo</a>(<span class="keywordtype">float</span> lado);</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    </div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTriangulo.html#a1f5be10a4be1573deb30a2c3183854cc">get_base</a>();</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangulo.html#ae966bb0f31c5d2f5743fb3beffa84c28">set_base</a>(<span class="keywordtype">float</span> base);</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTriangulo.html#ab3004c72c6d231a0aec6178e17ab7d19">get_lado</a>();</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangulo.html#a83ef4ab9aecb441ef81603227d4dd141">set_lado</a>(<span class="keywordtype">float</span> lado);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="classTriangulo.html#a1ba1414ed8d54f57ef3d0849857cfeb7">get_altura</a>();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classTriangulo.html#a9a4ee8d44d7ea23d118bbf9cc72157a2">set_altura</a>(<span class="keywordtype">float</span> altura);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    </div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;};</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*TRIANGULO_H*/</span><span class="preprocessor"></span></div><div class="ttc" id="classTriangulo_html_ae966bb0f31c5d2f5743fb3beffa84c28"><div class="ttname"><a href="classTriangulo.html#ae966bb0f31c5d2f5743fb3beffa84c28">Triangulo::set_base</a></div><div class="ttdeci">void set_base(float base)</div><div class="ttdoc">Metodo acessor para alterar a base do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:83</div></div>
+<div class="ttc" id="classTriangulo_html_acd48a4eeff79b39b045d1f41aff72989"><div class="ttname"><a href="classTriangulo.html#acd48a4eeff79b39b045d1f41aff72989">Triangulo::mostrar_perimetro_triangulo</a></div><div class="ttdeci">void mostrar_perimetro_triangulo(float lado)</div><div class="ttdoc">Funcao que mostra o perimetro do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:62</div></div>
+<div class="ttc" id="classTriangulo_html_a4c849485ba611cfeadc46030687bf74f"><div class="ttname"><a href="classTriangulo.html#a4c849485ba611cfeadc46030687bf74f">Triangulo::calcular_area_triangulo</a></div><div class="ttdeci">float calcular_area_triangulo(float base, float altura)</div><div class="ttdoc">Funcao que calcula a area do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:26</div></div>
+<div class="ttc" id="classTriangulo_html_a95408e4018c121b3ef88b3c44a4e3607"><div class="ttname"><a href="classTriangulo.html#a95408e4018c121b3ef88b3c44a4e3607">Triangulo::calcular_perimetro_triangulo</a></div><div class="ttdeci">float calcular_perimetro_triangulo(float lado)</div><div class="ttdoc">Funcao que calcula o perimetro do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:38</div></div>
+<div class="ttc" id="classTriangulo_html_aca2be15b19831e8d7a5331808f5c1958"><div class="ttname"><a href="classTriangulo.html#aca2be15b19831e8d7a5331808f5c1958">Triangulo::~Triangulo</a></div><div class="ttdeci">~Triangulo()</div><div class="ttdoc">Destrutor padrao. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:17</div></div>
+<div class="ttc" id="classTriangulo_html_ab3004c72c6d231a0aec6178e17ab7d19"><div class="ttname"><a href="classTriangulo.html#ab3004c72c6d231a0aec6178e17ab7d19">Triangulo::get_lado</a></div><div class="ttdeci">float get_lado()</div><div class="ttdoc">Metodo acessor para pegar o lado do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:113</div></div>
+<div class="ttc" id="classTriangulo_html_a1ba1414ed8d54f57ef3d0849857cfeb7"><div class="ttname"><a href="classTriangulo.html#a1ba1414ed8d54f57ef3d0849857cfeb7">Triangulo::get_altura</a></div><div class="ttdeci">float get_altura()</div><div class="ttdoc">Metodo acessor para pegar a altura do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:93</div></div>
+<div class="ttc" id="classTriangulo_html_a905d421bd19655a979ccad9e2998db0c"><div class="ttname"><a href="classTriangulo.html#a905d421bd19655a979ccad9e2998db0c">Triangulo::Triangulo</a></div><div class="ttdeci">Triangulo()</div><div class="ttdoc">Construtor padrao. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:13</div></div>
+<div class="ttc" id="classTriangulo_html_a83ef4ab9aecb441ef81603227d4dd141"><div class="ttname"><a href="classTriangulo.html#a83ef4ab9aecb441ef81603227d4dd141">Triangulo::set_lado</a></div><div class="ttdeci">void set_lado(float lado)</div><div class="ttdoc">Metodo acessor para alterar o lado do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:123</div></div>
+<div class="ttc" id="classTriangulo_html"><div class="ttname"><a href="classTriangulo.html">Triangulo</a></div><div class="ttdef"><b>Definition:</b> triangulo.h:9</div></div>
+<div class="ttc" id="classTriangulo_html_a1f5be10a4be1573deb30a2c3183854cc"><div class="ttname"><a href="classTriangulo.html#a1f5be10a4be1573deb30a2c3183854cc">Triangulo::get_base</a></div><div class="ttdeci">float get_base()</div><div class="ttdoc">Metodo acessor para pegar a base do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:73</div></div>
+<div class="ttc" id="classTriangulo_html_a82082d7842eb3b9968b6a36d2eb99684"><div class="ttname"><a href="classTriangulo.html#a82082d7842eb3b9968b6a36d2eb99684">Triangulo::mostrar_area_triangulo</a></div><div class="ttdeci">void mostrar_area_triangulo(float base, float altura)</div><div class="ttdoc">Funcao que mostra a area do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:50</div></div>
+<div class="ttc" id="classTriangulo_html_a9a4ee8d44d7ea23d118bbf9cc72157a2"><div class="ttname"><a href="classTriangulo.html#a9a4ee8d44d7ea23d118bbf9cc72157a2">Triangulo::set_altura</a></div><div class="ttdeci">void set_altura(float altura)</div><div class="ttdoc">Metodo acessor para alterar a altura do triangulo. </div><div class="ttdef"><b>Definition:</b> triangulo.cpp:103</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>

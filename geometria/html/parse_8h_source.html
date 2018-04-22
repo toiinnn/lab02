@@ -1,0 +1,90 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.13"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Calculadora geometrica: Código-Fonte de include/parse.h</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Calculadora geometrica
+   </div>
+   <div id="projectbrief">Programa para o calculo de formas geometricas planas e espaciais</div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Gerado por Doxygen 1.8.13 -->
+<script type="text/javascript">
+var searchBox = new SearchBox("searchBox", "search",false,'Busca');
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+$(function() {
+  initMenu('',true,false,'search.php','Busca');
+  $(document).ready(function() { init_search(); });
+});
+</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div id="nav-path" class="navpath">
+  <ul>
+<li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li>  </ul>
+</div>
+</div><!-- top -->
+<div class="header">
+  <div class="headertitle">
+<div class="title">parse.h</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160;<span class="comment">/*</span></div><div class="line"><a name="l00002"></a><span class="lineno">    2</span>&#160;<span class="comment"> *@file parse.h</span></div><div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="comment"> *@brief arquivo de cabecalho do parse</span></div><div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160;<span class="comment"> *@author Antonio Marcos de Oliveira</span></div><div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="comment"> *@since 18/04/1997</span></div><div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="comment"> *@date 21/04/1997</span></div><div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160;<span class="comment"> */</span></div><div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#ifndef __PARSE_H__</span></div><div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#define __PARSE_H__</span></div><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;triangulo.h&quot;</span></div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &quot;circulo.h&quot;</span></div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &quot;quadrado.h&quot;</span></div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &quot;retangulo.h&quot;</span></div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &quot;esfera.h&quot;</span></div><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &quot;piramide.h&quot;</span></div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;paralelepipedo.h&quot;</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;cubo.h&quot;</span></div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">using</span> std::cerr;</div><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;</div><div class="line"><a name="l00022"></a><span class="lineno"><a class="line" href="classParse.html">   22</a></span>&#160;<span class="keyword">class </span><a class="code" href="classParse.html">Parse</a></div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;{</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;<span class="keyword">private</span>:</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;    <a class="code" href="classTriangulo.html">Triangulo</a> triangulo;</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="classCirculo.html">Circulo</a> circulo;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="classQuadrado.html">Quadrado</a> quadrado;</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <a class="code" href="classRetangulo.html">Retangulo</a> retangulo;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    <a class="code" href="classEsfera.html">Esfera</a> esfera;</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="classPiramide.html">Piramide</a> piramide;</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="classParalelepipedo.html">Paralelepipedo</a> paralelepipedo;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classCubo.html">Cubo</a> cubo;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;<span class="keyword">public</span>:</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="classParse.html#ab44bf754dbe7e6fc008af31af8ca75fb">Parse</a>();</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <a class="code" href="classParse.html#a09620677a05691231960c07803aec495">~Parse</a>();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="classParse.html#a620949e81a084e31bce2f789fa875130">parse_geometria</a>(<span class="keywordtype">int</span> argc, <span class="keyword">const</span> <span class="keywordtype">char</span> *argv[]); </div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;};</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/*__PARSE_H__*/</span><span class="preprocessor"></span></div><div class="ttc" id="classRetangulo_html"><div class="ttname"><a href="classRetangulo.html">Retangulo</a></div><div class="ttdef"><b>Definition:</b> retangulo.h:9</div></div>
+<div class="ttc" id="classParse_html_a620949e81a084e31bce2f789fa875130"><div class="ttname"><a href="classParse.html#a620949e81a084e31bce2f789fa875130">Parse::parse_geometria</a></div><div class="ttdeci">void parse_geometria(int argc, const char *argv[])</div><div class="ttdoc">Funcao que recebe os parametros e eh a interacao com o usuario. </div><div class="ttdef"><b>Definition:</b> parse.cpp:28</div></div>
+<div class="ttc" id="classCirculo_html"><div class="ttname"><a href="classCirculo.html">Circulo</a></div><div class="ttdef"><b>Definition:</b> circulo.h:18</div></div>
+<div class="ttc" id="classQuadrado_html"><div class="ttname"><a href="classQuadrado.html">Quadrado</a></div><div class="ttdef"><b>Definition:</b> quadrado.h:17</div></div>
+<div class="ttc" id="classTriangulo_html"><div class="ttname"><a href="classTriangulo.html">Triangulo</a></div><div class="ttdef"><b>Definition:</b> triangulo.h:9</div></div>
+<div class="ttc" id="classParse_html_a09620677a05691231960c07803aec495"><div class="ttname"><a href="classParse.html#a09620677a05691231960c07803aec495">Parse::~Parse</a></div><div class="ttdeci">~Parse()</div><div class="ttdoc">Destrutor padrao. </div><div class="ttdef"><b>Definition:</b> parse.cpp:17</div></div>
+<div class="ttc" id="classPiramide_html"><div class="ttname"><a href="classPiramide.html">Piramide</a></div><div class="ttdef"><b>Definition:</b> piramide.h:16</div></div>
+<div class="ttc" id="classParse_html_ab44bf754dbe7e6fc008af31af8ca75fb"><div class="ttname"><a href="classParse.html#ab44bf754dbe7e6fc008af31af8ca75fb">Parse::Parse</a></div><div class="ttdeci">Parse()</div><div class="ttdoc">Construtor padrao. </div><div class="ttdef"><b>Definition:</b> parse.cpp:13</div></div>
+<div class="ttc" id="classParse_html"><div class="ttname"><a href="classParse.html">Parse</a></div><div class="ttdef"><b>Definition:</b> parse.h:22</div></div>
+<div class="ttc" id="classParalelepipedo_html"><div class="ttname"><a href="classParalelepipedo.html">Paralelepipedo</a></div><div class="ttdef"><b>Definition:</b> paralelepipedo.h:16</div></div>
+<div class="ttc" id="classCubo_html"><div class="ttname"><a href="classCubo.html">Cubo</a></div><div class="ttdef"><b>Definition:</b> cubo.h:17</div></div>
+<div class="ttc" id="classEsfera_html"><div class="ttname"><a href="classEsfera.html">Esfera</a></div><div class="ttdef"><b>Definition:</b> esfera.h:18</div></div>
+</div><!-- fragment --></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Gerado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.13
+</small></address>
+</body>
+</html>
